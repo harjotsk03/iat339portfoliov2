@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #111111;
+}
+
+.highlight-green {
+    color: #BFFF00;
+}
+
+.highlight-orange {
+    color: #FF6B4A;
+}
+
+.about-header {
+    text-align: center;
+    padding: 8rem 28rem;
+    background-color: #111111;
+    color: white;
+}
+
+.about-title {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.about-title span {
+    color: #BFFF00;
+}
+
+.about-subtitle {
+    font-size: 1.15rem;
+    line-height: 1.5;
+    color: #999999;
+}
+
+.tab-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.tab-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: none;
+    color: #999999;
+    background-color: #222222;
+    border-radius: 100rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.tab-button.active {
+    background-color: white;
+    color: black;
+}
+
+.tab-button:hover, .tab-button:focus {
+    background-color: #FF6B4A;
+    outline: none;
+    color: white;
+}
+
+@media screen and (max-width: 80rem) {
+    .about-header {
+        padding: 6rem 4rem;
+    }
+
+    .tab-navigation {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+
+    .tab-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+}
+
+@media screen and (max-width: 50rem) {
+    .about-header {
+        padding: 6rem 2rem;
+    }
+
+    .about-title {
+        font-size: 2.5rem;
+    }
+
+    .about-subtitle {
+        font-size: 1rem;
+    }
+}
+
+.who-section {
+    padding: 4rem 16rem;
+    color: white;
+    background-color: #111111;
+}
+
+.who-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.who-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.who-text {
+    color: #999999;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.highlight-white {
+    color: white;
+    font-weight: 500;
+}
+
+/* Add these media queries for responsiveness */
+@media screen and (max-width: 80rem) {
+    .who-section {
+        padding: 0rem 4rem;
+    }
+}
+
+@media screen and (max-width: 50rem) {
+    .who-section {
+        padding: 0rem 2rem;
+    }
+
+    .who-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .who-title {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .who-text {
+        font-size: 1rem;
+    }
+}
+
+.education-section {
+    padding: 2rem 16rem;
+    color: white;
+    background-color: #111111;
+}
+
+.education-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.university {
+    margin-bottom: 4rem;
+}
+
+.university-name {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.degree {
+    color: #999999;
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+}
+
+.year {
+    color: #999999;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.description {
+    color: #999999;
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 800px;
+}
+
+.coursework-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+    color: #FF6B4A;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.course-category {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.course-list {
+    list-style: none;
+}
+
+.course-list li {
+    color: #999999;
+    font-size: 1rem;
+    line-height: 1.8;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.course-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+.course-column:first-child .course-list li::before {
+    background-color: #BFFF00;
+}
+
+.course-column:last-child .course-list li::before {
+    background-color: #FF6B4A;
+}
+
+@media screen and (max-width: 80rem) {
+    .education-section {
+        padding: 4rem 4rem;
+    }
+
+    .coursework-title {
+        font-size: 1.75rem;
+    }
+}
+
+@media screen and (max-width: 50rem) {
+    .education-section {
+        padding: 4rem 2rem;
+    }
+
+    .courses-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .education-title {
+        font-size: 2rem;
+    }
+
+    .university-name {
+        font-size: 1.25rem;
+    }
+
+    .degree, .coursework-title {
+        font-size: 1.1rem;
+    }
+}
+
+.skills-section {
+    padding: 2rem 16rem;
+    color: white;
+    background-color: #111111;
+}
+
+.skills-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.skills-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.skills-category {
+    margin-bottom: 1rem;
+}
+
+.category-title {
+    color: #666666;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-transform: lowercase;
+}
+
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skill-tag {
+    background-color: #222222;
+    color: #999999;
+    padding: 0.5rem 1rem;
+    border-radius: 100px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+    background-color: #333333;
+    color: white;
+}
+
+@media screen and (max-width: 80rem) {
+    .skills-section {
+        padding: 4rem 4rem;
+    }
+}
+
+@media screen and (max-width: 50rem) {
+    .skills-section {
+        padding: 4rem 2rem;
+    }
+
+    .skills-title {
+        font-size: 2rem;
+    }
+
+    .category-title {
+        font-size: 1.1rem;
+    }
+
+    .skill-tag {
+        font-size: 0.85rem;
+    }
+}
+
+.interests-section {
+    padding: 2rem 16rem 8rem 16rem;
+    color: white;
+    background-color: #111111;
+}
+
+.interests-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.interest-card {
+    background-color: #1A1A1A;
+    padding: 2rem;
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.interest-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.interest-description {
+    color: #999999;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 80rem) {
+    .interests-section {
+        padding: 4rem 4rem;
+    }
+
+    .interests-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 50rem) {
+    .interests-section {
+        padding: 4rem 2rem;
+    }
+
+    .interests-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .interests-title {
+        font-size: 2rem;
+    }
+
+    .interest-title {
+        font-size: 1.25rem;
+    }
+
+    .interest-description {
+        font-size: 0.9rem;
+    }
+}
+
