@@ -67,9 +67,12 @@ body {
 
 .work-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     padding: 0 10rem 6rem 10rem;
     gap: 2rem;
+    justify-items: center;
+    align-items: center;
+
 }
 
 .work-grid a{

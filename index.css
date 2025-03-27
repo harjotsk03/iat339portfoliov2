@@ -9,6 +9,8 @@
 
 body {
   background-color: #111111;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 .hero {
@@ -59,7 +61,6 @@ body {
   border-radius: 2rem;
   margin: 0 auto;
   width: 70%;
-  margin-top: 2rem;
   gap: 2rem;
 }
 
@@ -98,8 +99,13 @@ body {
 }
 
 .about {
-  padding: 8rem 18rem;
+  padding: 0rem 0rem 8rem 0rem;
   margin: 0 auto;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 .about-title {
@@ -107,6 +113,8 @@ body {
   font-weight: 600;
   margin-bottom: 0.5rem;
   color: white;
+  text-align: center;
+  padding: 1rem 16rem;
 }
 
 .about-content {
@@ -140,6 +148,8 @@ body {
   color: white;
   text-decoration: none;
   border-radius: 2rem;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 0.9rem;
   transition: background-color 0.3s ease;
 }
@@ -163,7 +173,7 @@ body {
 
 @media screen and (max-width: 50rem) {
   .hero {
-    padding: 10rem 4rem;
+    padding: 10rem 2rem;
   }
 
   .stats {
@@ -199,6 +209,7 @@ body {
 
   .about {
     padding: 4rem 2rem;
+    overflow-x: hidden;
   }
 
   .about-content {
@@ -209,6 +220,7 @@ body {
   .about-title {
     font-size: 2rem;
     margin-bottom: 2rem;
+    padding: 1rem 2rem;
   }
 
   .about-subtitle {
@@ -221,7 +233,7 @@ body {
 }
 
 .work {
-  padding: 8rem 18rem;
+  padding: 3rem 18rem 10rem 18rem;
   margin: 0 auto;
 }
 
@@ -229,13 +241,16 @@ body {
   font-size: 3.5rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
+  text-align: center;
   color: white;
 }
 
 .work-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 2rem;
+  justify-items: center;
+  align-items: center;
 }
 
 .work-grid a {
@@ -307,10 +322,12 @@ body {
 @media screen and (max-width: 50rem) {
   .work {
     padding: 4rem 2rem;
+    overflow-x: hidden;
   }
 
   .work-grid {
     grid-template-columns: 1fr;
+
   }
 
   .work-title {

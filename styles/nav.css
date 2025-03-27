@@ -36,6 +36,8 @@
 @media screen and (max-width: 50rem) {
     .nav {
         padding: 1.5rem 1.5rem;
+        width: 100vw;
+        overflow: hidden;
     }
 
     .nav-link {

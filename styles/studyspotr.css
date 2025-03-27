@@ -26,6 +26,13 @@ body {
     color: white;
 }
 
+.overview-img-caption {
+    color: #c7c7c7;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: -1rem;
+}
+
 .studyspotr-title {
     font-size: 3.5rem;
     font-weight: 600;
@@ -105,6 +112,7 @@ body {
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
+
 
 /* Media query for screens smaller than 1024px */
 @media (max-width: 80rem) {
@@ -270,7 +278,6 @@ body {
 }
 
 .project-images {
-    padding: 2rem 12rem;
     margin: 2rem 0;
 }
 
@@ -308,7 +315,7 @@ body {
     }
 
     .project-images {
-        padding: 2rem 2rem;
+        padding: 0rem 0rem;
     }
 }
 
@@ -357,4 +364,132 @@ body {
     .conclusion-column p {
         font-size: 0.95rem;
     }
+}
+
+.text-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+
+@media (min-width: 50rem) {
+    .text-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.project-analysis {
+    padding: 4rem 12rem;
+    color: white;
+}
+
+.analysis-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.analysis-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.analysis-text {
+    color: #999999;
+    line-height: 1.8;
+    text-transform: lowercase;
+    font-size: 1.1rem;
+}
+
+.analysis-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  /* Two equal columns for desktop */
+    gap: 4rem;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 50rem) {
+    .analysis-grid {
+        grid-template-columns: 1fr;  /* Single column for mobile */
+        gap: 2rem;
+    }
+}
+
+.project-image-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5rem;
+}
+
+.project-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.5rem;
+}
+
+.project-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.project-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.project-image-container {
+  flex: 1;
+}
+
+.project-text {
+  flex: 1;
+  padding: 1rem;
+}
+
+.project-text h4 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  text-transform: lowercase;
+  color: #fff;
+}
+
+.project-text p {
+  line-height: 1.6;
+  text-transform: lowercase;
+  color: #ccc;
+}
+
+@media (max-width: 50rem) {
+
+    .project-analysis {
+        padding: 4rem 2rem;
+    }
+
+  .project-section, 
+  .project-section.reverse {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+  
+  .project-text {
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .project-text h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .project-text p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
 }
