@@ -60,7 +60,7 @@
 
 .footer-line {
     width: 100%;
-    height: 1px;
+    height: 0.15rem;
     background-color: #BFFF00;
     margin-bottom: 2rem;
 }

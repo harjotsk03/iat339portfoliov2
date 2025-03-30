@@ -202,7 +202,6 @@ body {
     color: #999999;
     font-size: 1rem;
     line-height: 1.6;
-    max-width: 800px;
 }
 
 .coursework-title {
@@ -242,8 +241,8 @@ body {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 6px;
-    height: 6px;
+    width: 0.5rem;
+    height: 0.5rem;
     border-radius: 50%;
 }
 
@@ -328,7 +327,7 @@ body {
     background-color: #222222;
     color: #999999;
     padding: 0.5rem 1rem;
-    border-radius: 100px;
+    border-radius: 100rem;
     font-size: 0.9rem;
     transition: all 0.3s ease;
 }

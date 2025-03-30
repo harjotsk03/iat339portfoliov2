@@ -71,7 +71,6 @@ body {
 .project-overview {
     padding: 4rem 2rem;
     color: white;
-    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -109,12 +108,10 @@ body {
 
 .overview-img {
     width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 1.5rem;
 }
 
 
-/* Media query for screens smaller than 1024px */
 @media (max-width: 80rem) {
     .overview-content {
         grid-template-columns: 1fr;
@@ -144,7 +141,7 @@ body {
 
 .project-details {
     padding: 2rem;
-    max-width: 1400px;
+    max-width: 80%;
     margin: 0 auto;
 }
 
@@ -154,7 +151,7 @@ body {
     gap: 2rem;
     padding: 3rem;
     background-color: #181818;
-    border-radius: 12px;
+    border-radius: 1.5rem;
 }
 
 .details-column h3 {
@@ -191,6 +188,10 @@ body {
 
 /* Media query for smaller screens */
 @media (max-width: 50rem) {
+    .project-details {
+        max-width: 100%;
+    }
+
     .details-grid {
         grid-template-columns: 1fr;
         padding: 1.5rem;
@@ -208,7 +209,7 @@ body {
 
 .photo-gallery {
     padding: 4rem 2rem;
-    max-width: 1400px;
+    max-width: 80%;
     margin: 0 auto;
 }
 
@@ -239,8 +240,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 1.5rem;
 }
 
 /* Modal styles */
@@ -262,7 +262,7 @@ body {
     max-width: 90%;
     max-height: 90vh;
     object-fit: contain;
-    border-radius: 8px;
+    border-radius: 1.5rem;
 }
 
 /* Media query for smaller screens */
@@ -342,14 +342,12 @@ body {
     font-size: 1.1rem;
 }
 
-/* Media query for screens smaller than 80rem (1280px) */
 @media screen and (max-width: 80rem) {
     .project-conclusion {
         padding: 4rem 2rem;
     }
 }
 
-/* Media query for screens smaller than 50rem (800px) */
 @media screen and (max-width: 50rem) {
     .conclusion-grid {
         grid-template-columns: 1fr;

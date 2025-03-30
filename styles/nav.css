@@ -24,13 +24,13 @@
     font-size: 1rem;
     font-weight: 600;
     transition: color 0.3s ease;
-    border-bottom: 2px solid transparent;
+    border-bottom: 0.15rem solid transparent;
 }
 
 .nav-link:hover, .nav-link:focus {
     color: #BFFF00;
     outline: none;
-    border-bottom: 2px solid #FF6B4A;
+    border-bottom: 0.15rem solid #FF6B4A;
 }
 
 @media screen and (max-width: 50rem) {
@@ -52,7 +52,7 @@
 @keyframes fadeInDown {
     from {
         opacity: 0;
-        transform: translateY(-20px);
+        transform: translateY(-0.95rem);
     }
     to {
         opacity: 1;
